@@ -49,7 +49,7 @@ test('test', async ({ page }) => {
    await page.waitForTimeout(2000)
 
    const paymentinfo = await page.locator("//div[text()='SauceCard #31337']").textContent();
-   console.log(paymentinfo);
+   console.log("payment Info: "+paymentinfo);
 
    await page.waitForTimeout(2000)
 
