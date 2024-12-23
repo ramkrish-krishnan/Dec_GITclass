@@ -56,6 +56,10 @@ test('test', async ({ page }) => {
    await page.click("//a[text()='FINISH']");
 
    await page.screenshot({path:'test-results/Screenshot/'+Date.now +'Result.png'});
+
+  await page.waitForTimeout(2000)
+
+  
    
    
 
